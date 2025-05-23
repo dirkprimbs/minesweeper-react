@@ -19,7 +19,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/minesweeper-react.git
+git clone https://github.com/dirkprimbs/minesweeper-react.git
 cd minesweeper-react
 ```
 
