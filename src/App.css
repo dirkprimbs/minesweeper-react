@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+  display: inline-block;
+  background-color: #bdbdbd;
+  border: 3px solid #7b7b7b;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-controls {
+  background-color: #c0c0c0 !important;
+  border: 3px solid #7b7b7b;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+}
+
+.game-status {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.instructions {
+  background-color: #e8e8e8 !important;
+  border: 2px solid #a9a9a9;
+}
+
+.instructions h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #444;
+}
+
+.instructions ul {
+  margin-left: 10px;
+  padding-left: 15px;
+}
+
+.instructions li {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* For cells */
+.cell-unrevealed:hover {
+  background-color: #d0d0d0 !important;
+}
+
+.cell-unrevealed:active {
+  background-color: #a0a0a0 !important;
+  border: 3px inset #707070 !important;
+}
+
+.cell-revealed {
+  background-color: #d7d7d7 !important;
+}
+
+.cell-empty {
+  background-color: #c5c5c5 !important;
+}
+
+.cell-mine {
+  background-color: #ff4c4c !important;
+}
+
+/* Display adjustments for different device sizes */
+@media (max-width: 768px) {
+  .game-controls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px !important;
+  }
+  
+  .game-controls > * {
+    width: 100%;
+    text-align: center;
+  }
+}
